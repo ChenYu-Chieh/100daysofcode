@@ -9,6 +9,6 @@
     1. Code for minimum an hour a day
     2. Tweet your progress daily with the hashtag: #100DaysOfCode
     3. Each day, reach out to at least two people on Twitter who are also doing the challenge.  
-  #### 第二項規則改由用*ig*的珍藏動態紀錄每天coding的過程，因為是珍藏功能，所以紀錄都會保留  
+  #### 第二項規則改由用*ig*的精選動態紀錄每天的coding，紀錄都會保留在IG個人檔案首頁  
     
   可以在我的**ig**頁面中看到~  https://www.instagram.com/peteryojay/?hl=zh-tw  
