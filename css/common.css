@@ -9,4 +9,7 @@ div.container>div.row>p{;font-size: 1.5rem; line-height: 2rem;}
 
 body>:nth-child(3)>:first-child{position:relative;}
 body>:nth-child(3)>:first-child::after{content: "";position: absolute;width: calc(100% / 2);
-	border-bottom: 1px solid;top: 100%;left: calc(100% / 2 - 25%);opacity: 0.6;}
+	border-bottom: 1px solid;top: 110%;left: calc(100% / 2 - 25%);opacity: 0.6;}
+
+/*--- PS作品輪播區 ---*/
+#Carousel>:nth-child(2)>:nth-child(2)>div>img{width: 100%;height: 100%;}
