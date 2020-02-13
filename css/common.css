@@ -33,18 +33,21 @@ left: calc(100% / 2 - 10%);top: 4vw;}
 
 /*Line of Time*/
 #historyLine>:nth-child(2)>div{position: relative;}
-#historyLine>:nth-child(2)>div>h5::before{content: "";width: 50px;height: 2px;background-color:#999;
-position: absolute;right: 15px;top: 50%;}
-#historyLine>:nth-child(2)>div>p::before{content: "";
-    width: 16px;
-    height: 16px;
-    position: absolute;
+#historyLine>:nth-child(2)>div>:nth-child(1)::before{content: "";width: 50px;height: 2px;background-color:#999;
+position: absolute;right: 1px;top: 50%;}
+#historyLine>:nth-child(2)>div>:nth-child(2)::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
     left: -2px;
     top: 50%;
-    margin-top:-5px;
+    margin-top:-4px;
     margin-left:;
     background-color: #fff;
     border-radius: 10px;
     border: 2px solid #999}
+#historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
+position: absolute;left: 13px;top: 50%;}    
 
 
