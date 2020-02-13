@@ -22,15 +22,29 @@ body>:nth-child(3)>:first-child::after{content: "";position: absolute;width: cal
 
 /*--- 時間軸區 ---*/
 #historyLine{position: relative;}
-#historyLine::before{content: "";width: 1rem;height: 80%;position: absolute;background-color: #f3f3f3;
-	left: 49%;top: 7vw;z-index: -1;}
+#historyLine::before{content: "";width: 10px;height: 80%;position: absolute;background-color: #f3f3f3;
+	left: 50%;top: 7vw;z-index: -1;}
 #historyLine::after{content: "";width: 15vw;border-bottom: 1px solid black;position: absolute;
 left: calc(100% / 2 - 10%);top: 4vw;}
 
 #historyLine>h2::after{content: "";width: 30px;}
 
 #historyLine>section>h5{background-color: #ffffff;margin: 0 45% 0 44.5%;}
-/*test*/
-#historyLine>section>div>p>img{border:1px;}
+
+/*Line of Time*/
+#historyLine>:nth-child(2)>div{position: relative;}
+#historyLine>:nth-child(2)>div>h5::before{content: "";width: 50px;height: 2px;background-color:#999;
+position: absolute;right: 15px;top: 50%;}
+#historyLine>:nth-child(2)>div>p::before{content: "";
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top:-5px;
+    margin-left:;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #999}
 
 
