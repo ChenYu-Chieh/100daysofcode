@@ -1,3 +1,27 @@
 @charset "UTF-8";
 
 /*--- 頁首導覽區 ---*/
+
+
+
+
+/*--- 自適應比照Bootstrap尺寸 ---*/
+/*--- Phone Landscape Style ---*/
+@media screen and (min-width:576px){
+	
+}
+
+/*--- Pad Portrait Style ---*/
+@media screen and (min-width:768px) {
+	
+}
+
+/*--- Pad Landscape Style ---*/
+@media screen and (min-width:992px) {
+	
+}
+
+/*--- PC Style ---*/
+@media screen and (min-width:1200px){
+	
+}

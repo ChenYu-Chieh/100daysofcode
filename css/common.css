@@ -23,19 +23,98 @@ body>:nth-child(3)>:first-child::after{content: "";position: absolute;width: cal
 /*--- 時間軸區 ---*/
 #historyLine{position: relative;}
 #historyLine::before{content: "";width: 10px;height: 80%;position: absolute;background-color: #f3f3f3;
-	left: 50%;top: 7vw;z-index: -1;}
-#historyLine::after{content: "";width: 15vw;border-bottom: 1px solid black;position: absolute;
-left: calc(100% / 2 - 10%);top: 4vw;}
+	left: 50%;top:10%;z-index: -1;}
+#historyLine::after{content: "";width: 20vw;border-bottom: 1px solid black;position: absolute;
+left: calc(100% / 2 - 8vw);top: 6%;}
 
 #historyLine>h2::after{content: "";width: 30px;}
 
-#historyLine>section>h5{background-color: #ffffff;margin: 0 45% 0 44.5%;}
+#historyLine>section>h5{background-color: #ffffff;}
 
 /*Line of Time*/
 #historyLine>:nth-child(2)>div{position: relative;}
-#historyLine>:nth-child(2)>div>:nth-child(1)::before{content: "";width: 50px;height: 2px;background-color:#999;
-position: absolute;right: 1px;top: 50%;}
-#historyLine>:nth-child(2)>div>:nth-child(2)::before{
+/*#historyLine>:nth-child(2)>div>:nth-child(1)::before{content: "";width: 50px;height: 2px;background-color:#999;
+position: absolute;right: 1px;top: 50%;}*/
+/*#historyLine>:nth-child(2)>div>:nth-child(2)::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    left: -2px;
+    top: 50%;
+    margin-top:-4px;
+    margin-left:;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #999}*/
+/*#historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
+	position: absolute;left: 13px;top: 50%;}*/
+    
+
+
+
+/*--- Phone Landscape Style ---*/
+@media screen and (min-width:576px){
+	
+	/*--- 時間軸區 ---*/
+	#historyLine::after{left: calc(100% / 2 - 70px);top: 8%;}
+	#historyLine::before{top:12%;}
+
+	/*Line of Time*/
+	#historyLine>:nth-child(2)>div>:nth-child(2)::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-top:-4px;
+    margin-left:;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #999;}
+	
+
+
+}
+
+/*--- 自適應比照Bootstrap尺寸 ---*/
+/*--- Pad Portrait Style ---*/
+@media screen and (min-width:768px) {
+	
+	/*--- 時間軸區 ---*/
+	#historyLine::after{left: calc(100% / 2 - 10vw);top: 13%;}
+	#historyLine::before{top:20%;}
+
+	/*Line of Time*/
+	#historyLine>:nth-child(2)>div>:nth-child(2)::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    left: 97%;
+    top: 50%;
+    margin-top:-4px;
+    margin-left:;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #999;}
+    #historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
+	position: absolute;left: 110%;top: 52%;}
+
+}
+
+/*--- Pad Landscape Style ---*/
+@media screen and (min-width:992px) {
+	
+	/*--- 時間軸區 ---*/
+	#historyLine::after{left: calc(100% / 2 - 10vw);top: 12%;}
+	#historyLine::before{top:18%;}
+	/*Line of Time*/
+	#historyLine>section>h5{background-color: #ffffff;margin: 0 45% 0 44.5%;}
+	#historyLine>:nth-child(2)>div>:nth-child(1)::before{content: "";width: 50px;height: 2px;background-color:#999;
+	position: absolute;right: 1px;top: 50%;}
+	#historyLine>:nth-child(2)>div>:nth-child(2)::before{
 	content: "";
 	width: 16px;
 	height: 16px;
@@ -47,7 +126,17 @@ position: absolute;right: 1px;top: 50%;}
     background-color: #fff;
     border-radius: 10px;
     border: 2px solid #999}
-#historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
-position: absolute;left: 13px;top: 50%;}    
+	#historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
+	position: absolute;left: 13px;top: 50%;}
 
+
+}
+
+/*--- PC Style ---*/
+@media screen and (min-width:1200px){
+	
+	/*--- 時間軸區 ---*/
+	#historyLine::after{left: calc(100% / 2 - 10vw);top: 10%;}
+	#historyLine::before{top:18%;}
+}
 
