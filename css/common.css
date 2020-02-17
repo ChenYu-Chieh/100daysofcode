@@ -22,10 +22,22 @@ body>:nth-child(3)>:first-child::after{content: "";position: absolute;width: cal
 
 /*--- 時間軸區 ---*/
 #historyLine{position: relative;}
-#historyLine::before{content: "";width: 10px;height: 90%;position: absolute;background-color: #f3f3f3;
-	left: 50%;top:10%;z-index: -1;}
-#historyLine::after{content: "";width: 20vw;border-bottom: 1px solid black;position: absolute;
-left: calc(100% / 2 - 10vw);top: 5%;}
+#historyLine::before{
+	content: "";
+	width: 10px;
+	height: 90%;
+	position: absolute;
+	background-color: #f3f3f3;
+	left: 50%;
+	top:7%;
+	z-index: -1;}
+#historyLine::after{
+	content: "";
+	width: 20vw;
+	border-bottom: 1px solid black;
+	position: absolute;
+	left: calc(100% / 2 - 10vw);
+	top: 4%;}
 
 #historyLine>h2::after{content: "";width: 30px;}
 
@@ -47,7 +59,7 @@ position: absolute;right: 1px;top: 50%;}*/
     margin-left:;
     background-color: #fff;
     border-radius: 10px;
-    border: 2px solid #999}
+    border: 2px solid #999;}
 /*#historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
 	position: absolute;left: 13px;top: 50%;}*/
 #historyLine>:nth-child(3)>div{position: relative;}	
@@ -57,14 +69,49 @@ position: absolute;right: 1px;top: 50%;}*/
 	height: 16px;
 	position: absolute;
     left: 49%;
-    top: 10%;
+    top: 0%;
     margin-top:-4px;
     margin-left:;
     background-color: #fff;
     border-radius: 10px;
-    border: 2px solid #999}
-/*#historyLine>:nth-child(3)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
-	position: absolute;left: 13px;top: 50%;}*/
+    border: 2px solid #999;}
+/*#historyLine>:nth-child(3)>div>:nth-child(2)::after{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color:#999;
+	position: absolute;
+	left: 13px;
+	top: 50%;}*/
+/*#historyLine>:nth-child(4)>div>:nth-child(1)::before{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color:#999;
+	position: absolute;
+	right: 1px;
+	top: 55%;}*/
+#historyLine>:nth-child(4)>div>:nth-child(2)::before{
+	content: "";
+	width: 16px;
+	height: 16px;
+	position: absolute;
+    left: 49%;
+    top: 0%;
+    margin-top:-4px;
+    margin-left:;
+    background-color: #fff;
+    border-radius: 10px;
+    border: 2px solid #999;}	
+/*#historyLine>:nth-child(4)>div>:nth-child(2)::after{
+	content: "";
+	width: 50px;
+	height: 2px;
+	background-color:#999;
+	position: absolute;
+	left: 12px;
+	top: 50%;}*/    
+
     
 
 
@@ -73,10 +120,15 @@ position: absolute;right: 1px;top: 50%;}*/
 @media screen and (min-width:576px){
 	
 	/*--- 時間軸區 ---*/
-	
+	#historyLine::after{
+		top: 4%;}
+	#historyLine::before{
+		top:7%;}
 	
 
 	/*Line of Time*/
+	#historyLine>:nth-child(4)>div>:nth-child(2)::before{
+		left: 49%;}
 	
 	
 
@@ -88,19 +140,43 @@ position: absolute;right: 1px;top: 50%;}*/
 	
 	/*--- 時間軸區 ---*/
 	#historyLine::after{top: 11%;}
-	#historyLine::before{top:20%;height: 80%}
+	#historyLine::before{
+		top:15%;}
 
 	/*Line of Time*/
 	#historyLine>:nth-child(2)>div>:nth-child(2)::before{
-	left: 97%;
-    top: 50%;}
-    #historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
-	position: absolute;left: 110%;top: 52%;}
+		left: 97%;
+    	top: 50%;}
+    #historyLine>:nth-child(2)>div>:nth-child(2)::after{
+    	content: "";
+    	width: 50px;
+    	height: 2px;
+    	background-color:#999;
+		position: absolute;
+		left: 110%;
+		top: 52%;}
 	#historyLine>:nth-child(3)>div>:nth-child(2)::before{
-	left: 15%;
-    top: 50%;}
-    #historyLine>:nth-child(3)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
-	position: absolute;left: -12%;top: 53%;}
+		left: 15%;
+    	top: 50%;}
+    #historyLine>:nth-child(3)>div>:nth-child(2)::after{
+    	content: "";
+    	width: 50px;
+    	height: 2px;
+    	background-color:#999;
+		position: absolute;
+		left: -12%;
+		top: 54%;}
+	#historyLine>:nth-child(4)>div>:nth-child(2)::before{
+		left: 98%;
+		top: 50%;}
+	#historyLine>:nth-child(4)>div>:nth-child(2)::after{
+		content: "";
+		width: 50px;
+		height: 2px;
+		background-color:#999;
+		position: absolute;
+		left: 110%;
+		top: 53%;}
 
 }
 
@@ -108,24 +184,60 @@ position: absolute;right: 1px;top: 50%;}*/
 @media screen and (min-width:992px) {
 	
 	/*--- 時間軸區 ---*/
-	
-	#historyLine::before{top:18%;}
-	/*Line of Time*/
-	#historyLine>section>h5{background-color: #ffffff;margin: 0 45% 0 44.5%;}
-	#historyLine>:nth-child(2)>div>:nth-child(1)::before{content: "";width: 50px;height: 2px;background-color:#999;
-	position: absolute;right: 1px;top: 50%;}
-	#historyLine>:nth-child(2)>div>:nth-child(2)::before{
-	left: -2px;
-    top: 50%;}
-	#historyLine>:nth-child(2)>div>:nth-child(2)::after{content: "";width: 50px;height: 2px;background-color:#999;
-	position: absolute;left: 13px;top: 50%;}
-	#historyLine>:nth-child(3)>div>:nth-child(2)::before{
-	left: 99%;
-    top: 50%;}
-    #historyLine>:nth-child(3)>div>:nth-child(3)::before{content: "";width: 50px;height: 2px;background-color:#999;
-position: absolute;right: 87%;top: 50%;}
-    #historyLine>:nth-child(3)>div>:nth-child(2)::after{width: 35px;left: 85%;}
+	#historyLine::before{
+		top:18%;}
 
+	/*Line of Time*/
+	#historyLine>section>h5{
+		background-color: #ffffff;
+		margin: 0 45% 0 44.5%;}
+	#historyLine>:nth-child(2)>div>:nth-child(1)::before{
+		content: "";
+		width: 50px;
+		height: 2px;
+		background-color:#999;
+		position: absolute;
+		right: 1px;
+		top: 50%;}
+	#historyLine>:nth-child(2)>div>:nth-child(2)::before{
+		left: -2px;
+    	top: 50%;}
+	#historyLine>:nth-child(2)>div>:nth-child(2)::after{
+		content: "";
+		width: 50px;
+		height: 2px;
+		background-color:#999;
+		position: absolute;
+		left: 13px;
+		top: 50%;}
+	#historyLine>:nth-child(3)>div>:nth-child(2)::before{
+		left: 99%;
+    	top: 50%;}
+    #historyLine>:nth-child(3)>div>:nth-child(3)::before{
+    	content: "";
+    	width: 50px;
+    	height: 2px;
+    	background-color:#999;
+		position: absolute;
+		right: 87%;
+		top: 54%;}
+    #historyLine>:nth-child(3)>div>:nth-child(2)::after{
+    	width: 35px;
+    	left: 85%;
+    	top: 54%;}
+	#historyLine>:nth-child(4)>div>:nth-child(1)::before{
+		content: "";
+		width: 50px;
+		height: 2px;
+		background-color:#999;
+		position: absolute;
+		left: 90%;
+		top: 55%;}
+	#historyLine>:nth-child(4)>div>:nth-child(2)::before{
+		left: -1%;}
+	#historyLine>:nth-child(4)>div>:nth-child(2)::after{
+		width: 40px;
+		left: 5%;}
 
 
 }
@@ -135,8 +247,25 @@ position: absolute;right: 87%;top: 50%;}
 	
 	/*--- 時間軸區 ---*/
 	
-	#historyLine::before{top:18%;}
-	#historyLine>:nth-child(3)>div>:nth-child(3)::before{right: 89%;top: 50%;}
-	#historyLine>:nth-child(3)>div>:nth-child(2)::after{width: 35px;left: 87%;}
+	#historyLine::before{top:15%;}
+	#historyLine::after{top: 8%;}
+	#historyLine>:nth-child(3)>div>:nth-child(3)::before{
+		right: 89%;
+		top: 54%;}
+	#historyLine>:nth-child(3)>div>:nth-child(2)::after{
+		width: 35px;
+		left: 87%;
+		top: }
+	#historyLine>:nth-child(4)>div>:nth-child(1)::before{
+		left: 91%;
+		top: 57%;
+	}
+	#historyLine>:nth-child(4)>div>:nth-child(2)::before{
+		left: -1%;}
+	#historyLine>:nth-child(4)>div>:nth-child(2)::after{
+		left:4%;
+		width: 50px;
+	}
+
 }
 
