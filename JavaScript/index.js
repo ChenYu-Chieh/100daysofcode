@@ -2,30 +2,37 @@ window.onload = function(){
 
 	//alert('Hello World!')
 	$(document).ready(function(){
-	// Activate Carousel
-	$('#myCarousel').carousel();
+		// Activate Carousel
+		$('#myCarousel').carousel();
 
-	// Enable Carousel Indicators
-	$(".item1").click(function(){
-		$("#myCarousel").carousel(0);
-	});
-	$(".item2").click(function(){
-		$("#myCarousel").carousel(1);
-	});
-	$(".item3").click(function(){
-		$("#myCarousel").carousel(2);
-	});
+		// Enable Carousel Indicators
+		$(".item1").click(function(){
+			$("#myCarousel").carousel(0);
+		});
+		$(".item2").click(function(){
+			$("#myCarousel").carousel(1);
+		});
+		$(".item3").click(function(){
+			$("#myCarousel").carousel(2);
+		});
 
-	// Enable Caarousel Controls
-	$(".carousel-control-prev").click(function(){
-		$("#myCarousel").carousel("prev");
+		// Enable Caarousel Controls
+		$(".carousel-control-prev").click(function(){
+			$("#myCarousel").carousel("prev");
+		});
+		$(".carousel-control-next").click(function(){
+			$("#myCarousel").carousel("next");
+		});
+		$("#btnforcontect").children().hide();
+		$("#btnforcontect").click(function(){
+			$("#contectimg1").fadeToggle('slow');
+			$("#contectimg2").fadeToggle('slow');
+			$("#contectimg3").fadeToggle('slow');
+		});
+
 	});
-	$(".carousel-control-next").click(function(){
-		$("#myCarousel").carousel("next");
-	});
-});
 	
-	//Carousel 輪播
+	
 
 	
 }

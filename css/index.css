@@ -7,6 +7,11 @@
 
 /*--- 自適應比照Bootstrap尺寸 ---*/
 /*--- Phone Landscape Style ---*/
+@media screen and (max-width: 575px){
+
+
+	
+}
 @media screen and (min-width:576px){
 	
 }
