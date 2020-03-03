@@ -1,24 +1,32 @@
 @charset "UTF-8";
 
+/*--- 通用區 ---*/
+
 /*--- 頁首導覽區 ---*/
+.show-under-768px{
+	display: block;
+}
+.show-above-768px{
+	display: none;
+}
 
 
 /*--- Menu Float ---*/
-.menu-float{
+#menu-float{
 	display: block;
 	position: fixed;
-	top: 10%;
-	left: 5%;
+	top: 15%;
+	left: 1%;
 	z-index: 10;
-	
-
+	border-radius: 10px;
+	background-color: #e6e6e6;
 }
 
 
 /*--- 自適應比照Bootstrap尺寸 ---*/
 /*--- Phone Landscape Style ---*/
 @media screen and (max-width: 575px){
-
+	
 
 	
 }
@@ -28,7 +36,12 @@
 
 /*--- Pad Portrait Style ---*/
 @media screen and (min-width:768px) {
-	
+	.show-above-768px{
+		display: block;
+	}
+	.show-under-768px{
+		display: none;
+	}
 }
 
 /*--- Pad Landscape Style ---*/

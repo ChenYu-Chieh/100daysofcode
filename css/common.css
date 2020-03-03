@@ -4,7 +4,7 @@
 
 
 /*--- 主體區 ---*/
-header>nav>div>a,header>nav>div>button{
+header>nav>div>a,header>nav>div>span{
 	color: white;}
 
 div.container>div.row>p{

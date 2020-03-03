@@ -26,28 +26,30 @@
 </head>
 <body>
 	<!-- 頁首導覽區 -->
-	<header class="bg-dark">
+	<header class="bg-info">
 		<nav class="container-fluid row text-center align-content-center">
-			<div class="col-4 my-3">
-				<a href="#" class="">1.....</a>
+			<div class="col-4 my-3 btn">
+				<span class="show-above-768px">Home Page</span>
+				<a href="#" class="show-under-768px"><img src="images/homebutton.svg" width="40"></a>
 			</div>
-			<div class="col-4 my-3">
-				<a href="#" class="">About Me</a>
+			<div class="col-4 my-3 btn">
+				<span class="show-above-768px">About Me</span>
 			</div>
-			<div class="col-4 my-3">
-				<button type="button" class="btn dropdown text-white" id="btnforcontect">Contect Me</button>
+			<div class="col-4 my-3 btn">
+				<span class="show-above-768px">Contect Me</span>
 			</div>
 		</nav>
-		<div class="menu-float">
-			<a class="" href="#">
-				<img src="images/facebook.svg" width="40">
+		<div class="d-flex flex-column" id="menu-float">
+			<a class="m-3" href="https://www.facebook.com/profile.php?id=100001065213954&lst=100001065213954%3A100001065213954%3A1583230309&sk=about">
+				<img src="images/facebook.svg" width="40" alt="FB">
 			</a>
-			<a class="" href="#">
-				<img src="images/instagram.svg" width="40">
+			<a class="m-3" href="https://www.instagram.com/peteryojay/?hl=zh-tw">
+				<img src="images/instagram.svg" width="40" alt="IG">
 			</a>
-			<a class="" href="#">
-				<img src="images/github.svg" width="40">
+			<a class="m-3" href="https://github.com/ChenYu-Chieh">
+				<img src="images/github.svg" width="40" alt="GitHub">
 			</a>
+			<button type="button" class="btn btn-light" id="x1">X</button>
 		</div>
 	</header>
 	<!-- 主體區 -->

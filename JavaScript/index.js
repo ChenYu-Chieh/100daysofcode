@@ -23,10 +23,18 @@ window.onload = function(){
 		$(".carousel-control-next").click(function(){
 			$("#myCarousel").carousel("next");
 		});
-		
+
+		//取消按鈕事件
+		$("#x1").click(function(){
+	//加callback就不會有自動回復問題
+			$("#menu-float").hide("slow",function(){
+				$(this).remove();
+			});
+		});
+
 	});
 	
 	
 
 	
-}
+};
