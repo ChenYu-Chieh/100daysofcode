@@ -1,6 +1,12 @@
 @charset "UTF-8";
 
+/*--- common Style ---*/
+
+
 /*--- 主體區 ---*/
+header>nav>div>a,header>nav>div>button{
+	color: white;}
+
 div.container>div.row>p{
 	font-size: 1.5rem;
 	line-height: 2rem;}

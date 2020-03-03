@@ -23,13 +23,7 @@ window.onload = function(){
 		$(".carousel-control-next").click(function(){
 			$("#myCarousel").carousel("next");
 		});
-		$("#btnforcontect").children().hide();
-		$("#btnforcontect").click(function(){
-			$("#contectimg1").fadeToggle('slow');
-			$("#contectimg2").fadeToggle('slow');
-			$("#contectimg3").fadeToggle('slow');
-		});
-
+		
 	});
 	
 	

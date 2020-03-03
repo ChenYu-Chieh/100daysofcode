@@ -3,6 +3,16 @@
 /*--- 頁首導覽區 ---*/
 
 
+/*--- Menu Float ---*/
+.menu-float{
+	display: block;
+	position: fixed;
+	top: 10%;
+	left: 5%;
+	z-index: 10;
+	
+
+}
 
 
 /*--- 自適應比照Bootstrap尺寸 ---*/
