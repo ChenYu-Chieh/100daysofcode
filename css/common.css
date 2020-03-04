@@ -10,7 +10,7 @@ header>nav>div>span:hover,header>nav>div>a:hover{
 /*--- 主體區 ---*/
 header>nav>div>a,header>nav>div>span{
 	color: white;
-	font-size: 1.5rem;
+	font-size: 1.25rem;
 }
 
 div.container>div.row>p{
@@ -152,11 +152,6 @@ position: absolute;right: 1px;top: 50%;}*/
 
 /*--- 自適應比照Bootstrap尺寸 ---*/
 /*--- Phone Landscape Style ---*/
-@media screen and (max-width: 575px){
-
-
-	
-}
 @media screen and (min-width:576px){
 	
 	/*--- 時間軸區 ---*/
@@ -169,11 +164,7 @@ position: absolute;right: 1px;top: 50%;}*/
 	/*Line of Time*/
 	#historyLine>:nth-child(4)>div>:nth-child(2)::before{
 		left: 49%;}
-	
-	
-
-
-}
+	}
 
 /*--- Pad Portrait Style ---*/
 @media screen and (min-width:768px) {

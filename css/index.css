@@ -41,12 +41,17 @@
 	.show-under-768px{
 		display: none;
 	}
+	
+}
+
+/*--- Pad Landscape Style ---*/
+@media screen and (min-width:992px) {
 	#menu-float{
 	display: flex;
 	flex-wrap: wrap;
 	position: fixed;
 	flex-direction: column;
-	top: 15%;
+	top: 20%;
 	left: 1%;
 	z-index: 10;
 	border-radius: 5px;
@@ -55,11 +60,6 @@
 	#menu-float>button{
 	display: block;
 	}
-}
-
-/*--- Pad Landscape Style ---*/
-@media screen and (min-width:992px) {
-	
 }
 
 /*--- PC Style ---*/

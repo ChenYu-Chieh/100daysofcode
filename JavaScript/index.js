@@ -30,12 +30,26 @@ window.onload = function(){
 			$("#myCarousel").carousel("next");
 		});
 
-		//取消按鈕事件
+		//浮動選單 取消按鈕事件
 		$("#x1").click(function(){
 	//加callback就不會有自動回復問題
 			$("#menu-float").hide("slow",function(){
 				$(this).remove();
 			});
+		});
+		//用for迴圈能重複效果使用吧?
+		$(window).scroll(function(){
+			var scrollVal = $(this).scrollTop();
+			if (scrollVal > 30){ 
+			$("#menu-float").animate({top:"150px"},"slow");
+			//$("#menu-float").animate({top:"0px"},"slow");
+			// if ($(window).scrollTop(0,10)){
+			// 	$("#menu-float").animate({top:"-50px"},"slow")
+			// 	.animate({top:"0px"},"slow");
+			// 	} else ($(documnet).scrollBy(0,-10)){
+			} else if (scrollVal < 30){
+				$("#menu-float").animate({top:"50px"},"slow");
+			}
 		});
 
 	});
