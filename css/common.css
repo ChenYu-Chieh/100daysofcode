@@ -2,10 +2,16 @@
 
 /*--- common Style ---*/
 
+/*頁首導覽區*/
+header>nav>div>span:hover,header>nav>div>a:hover{
+	animation: infobutton 0.5s 0s forwards;
+}
 
 /*--- 主體區 ---*/
 header>nav>div>a,header>nav>div>span{
-	color: white;}
+	color: white;
+	font-size: 1.5rem;
+}
 
 div.container>div.row>p{
 	font-size: 1.5rem;
@@ -136,8 +142,13 @@ position: absolute;right: 1px;top: 50%;}*/
 	left: 12px;
 	top: 50%;}*/    
 
-    
-
+/*--- Animate Zone ---*/
+@keyframes infobutton {
+	from {opacity: 1;}
+	to {opacity: 1;
+		border-radius: 10px;
+		box-shadow: 5px 5px 5px grey;}
+}
 
 /*--- 自適應比照Bootstrap尺寸 ---*/
 /*--- Phone Landscape Style ---*/

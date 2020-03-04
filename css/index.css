@@ -13,13 +13,12 @@
 
 /*--- Menu Float ---*/
 #menu-float{
-	display: block;
-	position: fixed;
-	top: 15%;
-	left: 1%;
-	z-index: 10;
-	border-radius: 10px;
-	background-color: #e6e6e6;
+	position: relative;
+	display: flex;
+	justify-content: space-around;
+}
+#menu-float>button{
+	display: none;
 }
 
 
@@ -41,6 +40,20 @@
 	}
 	.show-under-768px{
 		display: none;
+	}
+	#menu-float{
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	flex-direction: column;
+	top: 15%;
+	left: 1%;
+	z-index: 10;
+	border-radius: 5px;
+	background-color: #e6e6e6;
+	}
+	#menu-float>button{
+	display: block;
 	}
 }
 

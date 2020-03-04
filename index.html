@@ -27,53 +27,45 @@
 <body>
 	<!-- 頁首導覽區 -->
 	<header class="bg-info">
-		<nav class="container-fluid row text-center align-content-center">
-			<div class="col-4 my-3 btn">
-				<span class="show-above-768px">Home Page</span>
-				<a href="#" class="show-under-768px"><img src="images/homebutton.svg" width="40"></a>
+		<nav class="container-fluid d-flex justify-content-around text-center align-content-center">
+			<div class="my-2 btn">
+				<span class="show-above-768px p-2">Home Page</span>
+				<a href="#" class="show-under-768px p-2"><img src="images/homebutton.svg" width="30"></a>
 			</div>
-			<div class="col-4 my-3 btn">
-				<span class="show-above-768px">About Me</span>
+			<div class="my-2 btn">
+				<span class="show-above-768px p-2">About Me</span>
+				<a href="#" class="show-under-768px p-2"><img src="images/aboutme.svg" width="30"></a>
 			</div>
-			<div class="col-4 my-3 btn">
-				<span class="show-above-768px">Contect Me</span>
+			<div class="my-2 btn">
+				<span class="show-above-768px p-2">Contact Me</span>
+				<a href="#" class="show-under-768px p-2"><img src="images/contact.svg" width="30"></a>
 			</div>
 		</nav>
-		<div class="d-flex flex-column" id="menu-float">
-			<a class="m-3" href="https://www.facebook.com/profile.php?id=100001065213954&lst=100001065213954%3A100001065213954%3A1583230309&sk=about">
-				<img src="images/facebook.svg" width="40" alt="FB">
-			</a>
-			<a class="m-3" href="https://www.instagram.com/peteryojay/?hl=zh-tw">
-				<img src="images/instagram.svg" width="40" alt="IG">
-			</a>
-			<a class="m-3" href="https://github.com/ChenYu-Chieh">
-				<img src="images/github.svg" width="40" alt="GitHub">
-			</a>
-			<button type="button" class="btn btn-light" id="x1">X</button>
-		</div>
 	</header>
 	<!-- 主體區 -->
 	<div id="bg1">
 		<div class="container">
 			<div class="row p-5">
-				<h1 class="col-sm-12 text-center my-5 text-white">this is div</h1>
-				<p class="font-italic text-white mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam nihil soluta praesentium excepturi fugit quae fugiat aperiam rerum, facere perspiciatis voluptas explicabo est ipsa, expedita aliquid iure odit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet debitis saepe quo, esse ullam odio, nihil fugit, velit, voluptate ipsum magni! Vero, qui! Temporibus similique aut, aliquam atque ipsam quia!</p>
+				<h1 class="col-sm-12 text-center my-5 text-white">Hello ! Welcome to my web page!</h1>
+				<p class="col-sm-12 font-italic text-white mb-5 text-center">我是 陳又傑。<br>A RWD web designer、front-end web developer.<br>去年某一天，我做了一個重要的決定，為了趁還年輕時，<br>去學習更多未來不容易被淘汰的技能;我選擇離開了舒適的電視台工作。<br>思索著什麼樣的產業，在未來是不可或缺的，便想到了軟體產業的工作走向。<br>於是便走向網頁前端、RWD設計這條路。<br>如您所見，網頁UI運用的技能，是在聯成電腦中學習的。<br>包括基本的 HTML5、CSS3、JavaScript效果。<br>還使用了像是jQuery、Bootstrap4 等等框架加速建設。<br>平面影像部分，會運用 Adobe Photoshop、Illustrator兩種設計工具。<br>編輯器使用Sublime Text 3。<br>若您有興趣看更多的平面設計作品請點選下方按鈕，尋找分類作品。</p>
 			</div>
 		</div>			
 	</div>
 	<div class="container">
-		<div class="p-4 my-4">
+		<div class="p-4 my-4 d-flex flex-column text-center">
+			<h3>Phtotshop</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quibusdam, mollitia impedit ex beatae minima veniam dolorum dolores nulla ipsam aut officia totam? Eligendi vitae architecto laudantium, nostrum eaque, aut.</p>
+			<h3>Illustrator</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quibusdam, mollitia impedit ex beatae minima veniam dolorum dolores nulla ipsam aut officia totam? Eligendi vitae architecto laudantium, nostrum eaque, aut.</p>
 		</div>
 		<div class="row justify-content-around py-5">
-			<button type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Info</button>
-			<button type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Info</button>
-			<button type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Info</button>
+			<button type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Front-end</button>
+			<button type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Photoshop</button>
+			<button type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Illustrator</button>
 		</div>
-		<div class="row text-center ">
-			<h2 class="col-sm">表單</h2>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum temporibus unde, sapiente rem quam culpa repellendus harum laborum, sequi, cum ratione quibusdam debitis inventore dolores placeat non, corrupti voluptatibus fugiat.</p>
+		<div class="row text-center">
+			<h2 class="col-12 mb-3">資料填寫區</h2>
+			<p class="col-12">這裡是聯絡資料填寫區，不過還未學習後端，形式是示意用途。</p>
 		</div>
 		<!-- 表單填答區 -->
 		<div class="row">		
@@ -97,10 +89,17 @@
 		   		<button type="submit" class="btn btn-primary my-2">提交</button>
 		   	</div>
 		</div>   	
-		<div class="col-lg mb-5">
-			<nav>this is nav bar</nav>
-			<aside>this is aside</aside>
-			<article>this is article the main words part</article>
+		<div id="menu-float">
+			<a class="m-3" id="facebook" href="https://www.facebook.com/profile.php?id=100001065213954&lst=100001065213954%3A100001065213954%3A1583230309&sk=about">
+				<img src="images/facebook.svg" width="40" alt="FB">
+			</a>
+			<a class="m-3" id="instagram" href="https://www.instagram.com/peteryojay/?hl=zh-tw">
+				<img src="images/instagram.svg" width="40" alt="IG">
+			</a>
+			<a class="m-3" id="Github" href="https://github.com/ChenYu-Chieh">
+				<img src="images/github.svg" width="40" alt="GitHub">
+			</a>
+			<button type="button" class="btn btn-light" id="x1">X</button>
 		</div>
 		<!-- PS作品輪播區 -->
 		<div id="Carousel" class="my-5">

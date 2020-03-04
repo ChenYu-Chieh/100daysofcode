@@ -2,6 +2,12 @@ window.onload = function(){
 
 	//alert('Hello World!')
 	$(document).ready(function(){
+		$("#facebook").tooltip({ title:"go to FB",placement:"right"});
+		$("#instagram").tooltip({title:"go to instagram",placement:"right"});
+		$("#Github").tooltip({title:"go to Github",placement:"right"});
+		
+
+
 		// Activate Carousel
 		$('#myCarousel').carousel();
 
