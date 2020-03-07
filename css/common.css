@@ -155,9 +155,12 @@ position: absolute;right: 1px;top: 50%;}*/
 footer>div{
 	max-width:1519.2px;
 }
-footer>div>p,footer>div>p>a{
+footer>div>p,footer>div>p>a,footer>div>div>a{
 	color: white;
 	font-size: 1.25rem;
+}
+footer>div>div:hover{
+	cursor: pointer;
 }
 
 
@@ -168,6 +171,7 @@ footer>div>p,footer>div>p>a{
 		border-radius: 10px;
 		box-shadow: 5px 5px 5px grey;}
 }
+
 
 /*--- 自適應比照Bootstrap尺寸 ---*/
 /*--- Phone Landscape Style ---*/

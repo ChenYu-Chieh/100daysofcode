@@ -17,8 +17,18 @@
 	display: flex;
 	justify-content: space-around;
 }
+#menu-float>a>img:hover{
+	animation: menuFloatBtn 0.5s 0s forwards;
+}
 #menu-float>button{
 	display: none;
+}
+@keyframes menuFloatBtn {
+	from {opacity: 1;
+		border-radius: 20px;}
+	to {opacity: 1;
+		border-radius: 20px;
+		box-shadow: 5px 5px 10px grey;}
 }
 
 

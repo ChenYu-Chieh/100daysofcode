@@ -6,6 +6,7 @@ window.onload = function(){
 		$("#instagram").tooltip({title:"go to instagram",placement:"right"});
 		$("#Github").tooltip({title:"go to Github",placement:"right"});
 	
+	//頁首導覽區
 //作品引導按鈕
 	$("#guidebtn:nth-child(1)").click(function(){
 
@@ -44,20 +45,29 @@ window.onload = function(){
 				$(this).remove();
 			});
 		});
-	//用for迴圈能重複效果使用吧?
-		$(window).scroll(function(){
-			var scrollVal = $(this).scrollTop();
-			if (scrollVal > 200){ 
-			$("#menu-float").animate({top:"150px"},500);
-			//$("#menu-float").animate({top:"0px"},"slow");
-			// if ($(window).scrollTop(0,10)){
-			// 	$("#menu-float").animate({top:"-50px"},"slow")
-			// 	.animate({top:"0px"},"slow");
-			// 	} else ($(documnet).scrollBy(0,-10)){
-			} else if (scrollVal < 200){
-				$("#menu-float").animate({top:"50px"},500);
-			}
+	
+		// $(window).scroll(function(){
+		// 	var scrollVal = $(this).scrollTop();
+		// 	if (scrollVal > 200){ 
+		// 	$("#menu-float").animate({top:"150px"},500);
+		// 	$("#menu-float").animate({top:"0px"},"slow");
+		// 	if ($(window).scrollTop(0,10)){
+		// 		$("#menu-float").animate({top:"-50px"},"slow")
+		// 		.animate({top:"0px"},"slow");
+		// 		} else ($(documnet).scrollBy(0,-10)){
+		// 	} else if (scrollVal < 200){
+		// 		$("#menu-float").animate({top:"50px"},500);
+		// 	}
+		// });
+
+		//footer
+		$("#backToTop").on("click", function(){
+			$('html,body').animate({scrollTop:$("#header").offset().top},800,"swing");
+
 		});
+
+
+		
 
 	});
 	
