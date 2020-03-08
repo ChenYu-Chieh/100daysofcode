@@ -15,11 +15,11 @@ window.onload = function(){
 		$("#Carousel").show();
 	});
 
-	//作品輪播區
+	//PS作品輪播區
 		// Activate Carousel
 		$('#myCarousel').carousel();
 
-		// Enable Carousel Indicators
+		// // Enable Carousel Indicators
 		$(".item1").click(function(){
 			$("#myCarousel").carousel(0);
 		});
@@ -29,6 +29,17 @@ window.onload = function(){
 		$(".item3").click(function(){
 			$("#myCarousel").carousel(2);
 		});
+		// $(".item").on("click", itemSwitch);//測試
+		// function itemSwitch(i){
+		// 	switch ($(".item").[i]){
+		// 		case "1" :
+		// 		$("#myCarousel").carousel(0);break;
+		// 		case "2":
+		// 		$("#myCarousel").carousel(1);break;
+		// 		case "3":
+		// 		$("#myCarousel").carousel(2);break;
+		// 	}
+		// }
 
 		// Enable Caarousel Controls
 		$(".carousel-control-prev").click(function(){
@@ -37,6 +48,10 @@ window.onload = function(){
 		$(".carousel-control-next").click(function(){
 			$("#myCarousel").carousel("next");
 		});
+		//Illustrator輪播區
+		$("#myCarousel1").carousel();
+
+		$("item")
 
 	//浮動選單 取消按鈕事件
 		$("#x1").click(function(){
@@ -59,11 +74,13 @@ window.onload = function(){
 		// 		$("#menu-float").animate({top:"50px"},500);
 		// 	}
 		// });
-
+		//點選導覽
 		//footer
 		$("#backToTop").on("click", function(){
-			$('html,body').animate({scrollTop:$("#header").offset().top},800,"swing");
-
+			$('html,body').animate({scrollTop:$("#header").offset().top}, 1000, "swing");
+		});
+		$("#psBtn").on("click", function(){
+			$('html,body').animate({scrollTop:$("#Carousel").offset().top}, 800, "swing");
 		});
 
 
