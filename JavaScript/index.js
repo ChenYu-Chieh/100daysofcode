@@ -19,7 +19,7 @@ window.onload = function(){
 		// Activate Carousel
 		$('#myCarousel').carousel();
 
-		// // Enable Carousel Indicators
+		// Enable Carousel Indicators
 		$(".item1").click(function(){
 			$("#myCarousel").carousel(0);
 		});
@@ -29,18 +29,19 @@ window.onload = function(){
 		$(".item3").click(function(){
 			$("#myCarousel").carousel(2);
 		});
-		// $(".item").on("click", itemSwitch);//測試
-		// function itemSwitch(i){
-		// 	switch ($(".item").[i]){
-		// 		case "1" :
-		// 		$("#myCarousel").carousel(0);break;
-		// 		case "2":
-		// 		$("#myCarousel").carousel(1);break;
-		// 		case "3":
-		// 		$("#myCarousel").carousel(2);break;
-		// 	}
-		// }
-
+	//Ai作品輪播區
+		$("#myCarousel1").carousel();
+			
+		$(".item4").click(function(){
+			$("#myCarousel1").carousel(0);
+		});
+		$(".item5").click(function(){
+			$("#myCarousel1").carousel(1);
+		});
+		$(".item6").click(function(){
+			$("#myCarousel1").carousel(2);
+		});
+		
 		// Enable Caarousel Controls
 		$(".carousel-control-prev").click(function(){
 			$("#myCarousel").carousel("prev");
@@ -48,11 +49,7 @@ window.onload = function(){
 		$(".carousel-control-next").click(function(){
 			$("#myCarousel").carousel("next");
 		});
-		//Illustrator輪播區
-		$("#myCarousel1").carousel();
-
-		$("item")
-
+	
 	//浮動選單 取消按鈕事件
 		$("#x1").click(function(){
 	//加callback就不會有自動回復問題
@@ -81,6 +78,9 @@ window.onload = function(){
 		});
 		$("#psBtn").on("click", function(){
 			$('html,body').animate({scrollTop:$("#Carousel").offset().top}, 800, "swing");
+		});
+		$("#IllBtn").on("click", function(){
+			$('html,body').animate({scrollTop:$("#Carousel1").offset().top}, 800, "swing");
 		});
 
 
