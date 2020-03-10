@@ -58,10 +58,12 @@
 			<h3>Illustrator</h3>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam quibusdam, mollitia impedit ex beatae minima veniam dolorum dolores nulla ipsam aut officia totam? Eligendi vitae architecto laudantium, nostrum eaque, aut.</p>
 		</div>
+		<!-- 導覽按鈕區 -->
 		<div class="row justify-content-around py-5" id="guidebtn">
-			<button id="frontEndBtn" type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Front-end</button>
-			<button id="psBtn" type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Photoshop</button>
-			<button id="IllBtn" type="button" class="btn btn-info btn-lg col-sm-3 col-7 mb-3">Illustrator</button>
+			<button id="frontEndBtn" type="button" class="btn btn-info btn-lg col-sm-2 col-7 mb-2">Front-end</button>
+			<button id="psBtn" type="button" class="btn btn-info btn-lg col-sm-2 col-7 mb-2">Photoshop</button>
+			<button id="IllBtn" type="button" class="btn btn-info btn-lg col-sm-2 col-7 mb-2">Illustrator</button>
+			<button id="ctfBtn" type="button" class="btn btn-info btn-lg col-sm-2 col-7 mb-2">Certification</button>
 		</div>
 		<div class="row text-center">
 			<h2 class="col-12 mb-3">資料填寫區</h2>
@@ -88,7 +90,8 @@
 		   		<textarea class="form-control" row="5" id="comment" name="text" placeholder="在這留些話..."></textarea>
 		   		<button type="submit" class="btn btn-primary my-2">提交</button>
 		   	</div>
-		</div>   	
+		</div>
+		<!-- 浮動info區 -->
 		<div id="menu-float">
 			<a class="m-3" id="facebook" href="https://www.facebook.com/profile.php?id=100001065213954&lst=100001065213954%3A100001065213954%3A1583230309&sk=about">
 				<img src="images/facebook.svg" width="40" alt="FB">
@@ -112,7 +115,7 @@
 					<li class="item3"></li>
 				</ul>
 				<!-- 圖片輪播區塊 -->
-				<div class="carousel-inner">
+				<div class="carousel-inner boxShadow">
 					<div class="carousel-item active">
 						<img src="images/the matrix2020.1.23.jpg" alt="駭客任務4">
 						<div class="carousel-caption">
@@ -144,6 +147,7 @@
 				</a>
 			</div>
 		</div>
+		<!-- Ai作品輪播區 -->
 		<div id="Carousel1" class="my-5">
 			<h3 class="text-center mb-5">Illustrator 成品</h3>
 			<div id="myCarousel1" class="carousel slide">
@@ -153,34 +157,34 @@
 					<li class="item5"></li>
 					<li class="item6"></li>
 				</ul>
-				<div class="carousel-inner">
+				<div class="carousel-inner boxShadow">
 					<div class="carousel-item active">
-						<img src="images/Cloris-LOGO.jpg">
+						<img src="images/logoDesign1.svg" alt="設計構想">
 						<div class="carousel-caption">
-							<h3>Cloris 下午茶店</h3>
-							<p>Ai LOGO 設計</p>
+							<h3>Cloris LOGO</h3>
+							<p>設計構想:低咖啡因下午茶店</p>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div id="test"><img src=""></div>
+						<img src="images/logoDesign2.svg" alt="設計方向">
 						<div class="carousel-caption">
-							<h3></h3>
-							<p></p>
+							<h3>Cloris LOGO</h3>
+							<p>制定設計方向</p>
 						</div>
 					</div>
 					<div class="carousel-item">
-						<div id="test"><img src=""></div>
+						<img src="images/logoDesign3.svg" alt="實際成品">
 						<div class="carousel-caption">
-							<h3></h3>
-							<p></p>
+							<h3>Cloris LOGO</h3>
+							<p>設計成品</p>
 						</div>
 					</div>
 				</div>
 				<!-- 左右輪播按鍵 -->
-				<a href="#myCarousel" class="carousel-control-prev">
+				<a href="#myCarousel1" class="carousel-control-prev">
 					<span class="carousel-control-prev-icon"></span>
 				</a>
-				<a href="#myCarousel" class="carousel-control-next">
+				<a href="#myCarousel1" class="carousel-control-next">
 					<span class="carousel-control-next-icon"></span>
 				</a>
 		</div>

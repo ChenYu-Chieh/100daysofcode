@@ -29,6 +29,13 @@ window.onload = function(){
 		$(".item3").click(function(){
 			$("#myCarousel").carousel(2);
 		});
+		// Enable Carousel Controls
+		$(".carousel-control-prev").click(function(){
+			$("#myCarousel").carousel("prev");
+		});
+		$(".carousel-control-next").click(function(){
+			$("#myCarousel").carousel("next");
+		});
 	//Ai作品輪播區
 		$("#myCarousel1").carousel();
 			
@@ -41,14 +48,14 @@ window.onload = function(){
 		$(".item6").click(function(){
 			$("#myCarousel1").carousel(2);
 		});
-		
-		// Enable Caarousel Controls
+		// Enable Carousel Controls
 		$(".carousel-control-prev").click(function(){
-			$("#myCarousel").carousel("prev");
+			$("#myCarousel1").carousel("prev");
 		});
 		$(".carousel-control-next").click(function(){
-			$("#myCarousel").carousel("next");
+			$("#myCarousel1").carousel("next");
 		});
+		
 	
 	//浮動選單 取消按鈕事件
 		$("#x1").click(function(){
