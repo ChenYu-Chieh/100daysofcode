@@ -80,7 +80,7 @@ window.onload = function(){
 		// });
 		//點選導覽
 		//footer
-		$("#backToTop","BackToTop").on("click", function(){
+		$("#backToTop,#BackToTop").on("click", function(){
 			$('html,body').animate({scrollTop:$("#header").offset().top}, 1000, "swing");
 		});
 		$("#psBtn").on("click", function(){
