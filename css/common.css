@@ -179,6 +179,9 @@ footer>div>p{
 footer>div>div:hover{
 	cursor: pointer;
 }
+footer>div>:nth-child(5):hover{
+	cursor: pointer;
+}
 
 
 /*--- Animate Zone ---*/

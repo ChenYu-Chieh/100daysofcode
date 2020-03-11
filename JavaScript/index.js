@@ -5,7 +5,7 @@ window.onload = function(){
 		$("#facebook").tooltip({ title:"go to FB",placement:"right"});
 		$("#instagram").tooltip({title:"go to instagram",placement:"right"});
 		$("#Github").tooltip({title:"go to Github",placement:"right"});
-	
+		$("#call").tooltip({title:"0916166002" ,placement:"top"});
 	//頁首導覽區
 //作品引導按鈕
 	$("#guidebtn:nth-child(1)").click(function(){
@@ -80,7 +80,7 @@ window.onload = function(){
 		// });
 		//點選導覽
 		//footer
-		$("#backToTop").on("click", function(){
+		$("#backToTop","BackToTop").on("click", function(){
 			$('html,body').animate({scrollTop:$("#header").offset().top}, 1000, "swing");
 		});
 		$("#psBtn").on("click", function(){
