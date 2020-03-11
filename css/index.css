@@ -3,10 +3,19 @@
 /*--- 通用區 ---*/
 
 /*--- 頁首導覽區 ---*/
+
+/*--- 隱藏、顯示區 ---*/
 .show-under-768px{
 	display: block;
 }
 .show-above-768px{
+	display: none;
+}
+.show-under-992px{
+	display: block;
+
+}
+.show-above-992px{
 	display: none;
 }
 /* --- test --- */
@@ -75,6 +84,13 @@
 	}
 	#menu-float>button{
 	display: block;
+	}
+	.show-above-992px{
+		display: block;
+
+	}
+	.show-under-992px{
+		display: none;
 	}
 }
 
