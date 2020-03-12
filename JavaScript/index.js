@@ -55,6 +55,8 @@ window.onload = function(){
 		$(".carousel-control-next").click(function(){
 			$("#myCarousel1").carousel("next");
 		});
+	//Certifacation輪播區
+		
 		
 	
 	//浮動選單 取消按鈕事件
