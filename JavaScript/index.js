@@ -56,8 +56,20 @@ window.onload = function(){
 			$("#myCarousel1").carousel("next");
 		});
 	//Certifacation輪播區
-		
-		
+		$("#myCarousel2").carousel();
+
+		$(".item7").click(function(){
+			$("#myCarousel2").carousel(0);
+		});
+		$(".item8").click(function(){
+			$("#myCarousel2").carousel(1);
+		});
+		$(".carousel-control-prev").click(function(){
+			$("#myCarousel2").carousel("prev");
+		});
+		$(".carousel-control-next").click(function(){
+			$("#myCarousel2").carousel("next");
+		});
 	
 	//浮動選單 取消按鈕事件
 		$("#x1").click(function(){
