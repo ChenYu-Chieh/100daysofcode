@@ -1,6 +1,9 @@
 @charset "UTF-8";
 
 /*--- 通用區 ---*/
+.carousel-inner img {
+    margin: auto;
+}
 
 /*--- 頁首導覽區 ---*/
 
@@ -38,6 +41,13 @@
 #menu-float>button{
 	display: none;
 }
+
+/*--- 認證輪播區 ---*/
+#Carousel2>:nth-child(2)>.carousel-inner>div>img{
+	margin: 0 auto;
+}
+
+/*--- 動畫區 ---*/
 @keyframes menuFloatBtn {
 	from {opacity: 1;
 		border-radius: 20px;}

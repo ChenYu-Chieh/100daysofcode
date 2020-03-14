@@ -109,7 +109,6 @@ position: absolute;right: 1px;top: 50%;}*/
     left: 49%;
     top: 12%;
     margin-top:-4px;
-    margin-left:;
     background-color: #fff;
     border-radius: 10px;
     border: 2px solid #999;}
@@ -124,7 +123,6 @@ position: absolute;right: 1px;top: 50%;}*/
     left: 49%;
     top: 0%;
     margin-top:-4px;
-    margin-left:;
     background-color: #fff;
     border-radius: 10px;
     border: 2px solid #999;}
@@ -152,7 +150,6 @@ position: absolute;right: 1px;top: 50%;}*/
     left: 49%;
     top: 0%;
     margin-top:-4px;
-    margin-left:;
     background-color: #fff;
     border-radius: 10px;
     border: 2px solid #999;}	
@@ -174,7 +171,7 @@ footer>div>p>a,
 footer>div>div>span,
 footer>div>p{
 	color: white;
-	/* font-size: 1.25rem; */
+	
 }
 footer>div>div:hover{
 	cursor: pointer;
@@ -334,7 +331,8 @@ footer>div>:nth-child(5):hover{
 	#historyLine>:nth-child(3)>div>:nth-child(2)::after{
 		width: 35px;
 		left: 87%;
-		top: }
+		top:
+	 }
 	#historyLine>:nth-child(4)>div>:nth-child(1)::before{
 		left: 91%;
 		top: 57%;
